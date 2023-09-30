@@ -9,15 +9,17 @@ En este artículo, seguiremos los tutoriales de RapidMiner "Modeling", "Scoring"
 
 ## Modeling
 Aprendemos de decision tree, set of rules y Bayes model.
+<!-- Falta rmp -->
 
 ## Scoring 
 Usamos el método de Naive Bayes para predecir la clase "Sobrevivió" (sí / no) de cada pasajero y encontrar sus respectivas confianzas.
-
+<!-- Falta rmp -->
 ## Test Splits and Validation 
 Aprendimos como usar el split data y hacer validaciones con las herramientas del rapiminer y como en general se separa en 0.7 y 0.3
-
+<!-- Falta rmp -->
 ## Cross Validation
 Aprendemos como usar la herramienta de cross validation.
-
+<!-- Falta rmp -->
 ## Visual Model Comparison
-Aprendemos a usar el ROC Curves
+Aprendemos a usar el ROC Curves.
+<!-- Falta rmp -->

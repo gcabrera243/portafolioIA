@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>PD1 - Procesamiento previo de los datos - Wine</title>
+  <title>PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="/pd1-procesamiento-previo-de-los-datos-wine.html" rel="canonical" />
+<link href="/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html" rel="canonical" />
   <!-- Feed -->
 
   <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
@@ -33,7 +33,7 @@
 
 
 
-    <meta name="description" content="En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la...">
+    <meta name="description" content="El objetivo es entender como se construye el algoritmo de regresion lineal mediante el programa excel. Calculo B0 y B1 Primero...">
 
     <meta name="author" content="Gaston Cabrera">
 
@@ -44,15 +44,15 @@
 
 <!-- Open Graph -->
 <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Portafolio IA"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="PD1 - Procesamiento previo de los datos - Wine"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la..."/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="El objetivo es entender como se construye el algoritmo de regresion lineal mediante el programa excel. Calculo B0 y B1 Primero..."/>
 <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/pd1-procesamiento-previo-de-los-datos-wine.html"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2023-09-03 10:20:00+02:00"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content=""/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="/author/gaston-cabrera.html">
-<meta prefix="og: http://ogp.me/ns#" property="article:section" content="UT2"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:section" content="UT3"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:tag" content="['PDs']"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/theme/images/home-bg.jpg">
 
@@ -62,8 +62,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "PD1 - Procesamiento previo de los datos - Wine",
-  "headline": "PD1 - Procesamiento previo de los datos - Wine",
+  "name": "PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente",
+  "headline": "PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente",
   "datePublished": "2023-09-03 10:20:00+02:00",
   "dateModified": "",
   "author": {
@@ -72,8 +72,8 @@
     "url": "/author/gaston-cabrera.html"
   },
   "image": "/theme/images/post-bg.jpg",
-  "url": "/pd1-procesamiento-previo-de-los-datos-wine.html",
-  "description": "En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la..."
+  "url": "/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html",
+  "description": "El objetivo es entender como se construye el algoritmo de regresion lineal mediante el programa excel. Calculo B0 y B1 Primero..."
 }
 </script>
 </head>
@@ -121,7 +121,7 @@
             </a>
           </span>
         </nav>
-        <h1 class="post-title">PD1 - Procesamiento previo de los datos - Wine</h1>
+        <h1 class="post-title">PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="/author/gaston-cabrera.html">Gaston Cabrera</a>
@@ -138,63 +138,34 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la preparacion de datos y luego utilizaremos el conjunto de datos Wine de la UCI como ejemplo práctico para demostrar lo aprendido.</p>
-<h2>Aprendizaje de RapidMiner</h2>
-<p>En RapidMiner Studio, ve a la sección de Help / Tutorials, y de la parte “Prepare Data” completa
-los tutoriales:
-1. ”Handling Missing Values” y
-2. ”Normalization and Outlier detection”</p>
-<p>Gracias a los tutoriales de RapidMiner, hemos adquirido un profundo conocimiento de las herramientas disponibles para el procesamiento de datos, selección de características y diversas técnicas de normalización.
-Durante el análisis de los datos, hemos reconocido la importancia de la normalización. Además, hemos identificado valores atípicos en ciertas instancias y notado la presencia de valores faltantes en algunos atributos.</p>
-<!-- Faltan los dos .rmp -->
-
-<h2>Ejemplo Práctico</h2>
-<p>Problema planteado: Determinar la clase de vino a partir de sus concentraciones de varios nutrientes. Se trata de un problema de clasificacion donde vamos a tener 3 clases.</p>
-<p>Variable objetivo: class (clase de vino) que es de tipo categórico</p>
-<!-- Falta imagen de los atributos y sus tipos -->
-
-<p>Los atributos Magnesium y Proline son de tipo numérico entero.
-La mayoría de atributos son de tipo numérico de punto flotante.</p>
-<p>Atributo                    Tipo  <br>
-class                       Categorical
-Alcohol                     Continuous
-Malicacid                   Continuous
-Ash                     Continuous
-Alcalinity_of_ash               Continuous
-Magnesium                   Integer
-Total_phenols                   Continuous
-Flavanoids                  Continuous
-Nonflavanoid_phenols                Continuous
-Proanthocyanins                 Continuous
-Color_intensity                 Continuous
-Hue                     Continuous
-0D280_0D315_of_diluted_wines            Continuous
-Proline                     Integer</p>
-<p>Se detectaron 10 outliers en los datos.</p>
-<!-- Imagen Outliers -->
-
-<p>Se crearon dos canales, uno donde se utiliza el dataset tal cual esta y otro en donde se aplican bloques para normalizar y estandarizar los datos.</p>
-<p>para el dataset sin bloques:
-<img alt="performance1" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD1/PerformanceSinNormalizar.png?raw=true"></p>
-<p>Para el dataset con bloques:</p>
-<!-- Imagen Performance Normalizado -->
-
-<p>Dio mejor la performance de los datos sin normalizar en este caso. Esto puede ser por el split actual de datos.</p>
-<!-- Falta el .rmp -->
+                <p>El objetivo es entender como se construye el algoritmo de regresion lineal mediante el programa excel.</p>
+<h2>Calculo B0 y B1</h2>
+<p>Primero calculamos los valores de B0 y B1 con los datos que tenemos.</p>
+<p><img alt="DatosB0_B1" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/ValoresB0B1.png?raw=true"></p>
+<h2>Iteraciones</h2>
+<p>Al itrerar 24 obtenemos la siguiente tabla:
+<img alt="Tabla" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/TablaIteraciones.png?raw=true"></p>
+<p>Y al graficar los resultados:
+<img alt="Grafica" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/GraficaTablaIteraciones.png?raw=true"></p>
+<h2>Generar valores de entrada</h2>
+<p>Al generar valores de entrada entre 0 y 8 con paso 0.1 llegamos a la siguiente grafica:
+<img alt="Grafica" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/Tabla0a8.png?raw=true"></p>
+<p>Los calculos y valores pueden ser vistos en el siguiente archivo:
+<a href="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/PD1.xlsx?raw=true">PD1.xlsx</a></p>
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=PD1 - Procesamiento previo de los datos - Wine&amp;url=/pd1-procesamiento-previo-de-los-datos-wine.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente&amp;url=/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                       <i class="ic ic-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/pd1-procesamiento-previo-de-los-datos-wine.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                       <i class="ic ic-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/pd1-procesamiento-previo-de-los-datos-wine.html&amp;title=PD1 - Procesamiento previo de los datos - Wine" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
+                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html&amp;title=PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
                       <i class="ic ic-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
                     </a>
-                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=PD1 - Procesamiento previo de los datos - Wine&amp;body=/pd1-procesamiento-previo-de-los-datos-wine.html">
+                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=PD1 - Algoritmos Lineales - Regresión lineal con descenso de gradiente&amp;body=/pd1-algoritmos-lineales-regresion-lineal-con-descenso-de-gradiente.html">
                       <i class="ic ic-mail" aria-hidden="true"></i><span class="hidden">Email</span>
                     </a>
                     <div class="clear"></div>
