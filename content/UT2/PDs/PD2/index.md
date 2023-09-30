@@ -9,18 +9,23 @@ En este artículo, seguiremos los tutoriales de RapidMiner "Modeling", "Scoring"
 
 ## Modeling
 Aprendemos de decision tree, set of rules y Bayes model.
-![Modeling](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/Modeling.rmp?raw=true)
 
 
 ## Scoring 
 Usamos el método de Naive Bayes para predecir la clase "Sobrevivió" (sí / no) de cada pasajero y encontrar sus respectivas confianzas.
-![Scoring](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/Scoring.rmp?raw=true)
+
 ## Test Splits and Validation 
 Aprendimos como usar el split data y hacer validaciones con las herramientas del rapiminer y como en general se separa en 0.7 y 0.3
-![TestSplitsandValidation](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/TestSplitsandValidation.rmp?raw=true)
+
 ## Cross Validation
 Aprendemos como usar la herramienta de cross validation.
-![CrossValidation](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/CrossValidation.rmp?raw=true)
+
 ## Visual Model Comparison
 Aprendemos a usar el ROC Curves.
-![VisualModelComparison](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/VisualModelComparison.rmp?raw=true)
+
+## Archivos
+- [Modeling.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/Modeling.rmp?raw=true)
+- [Scoring.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/Scoring.rmp?raw=true)
+- [TestSplitsandValidation.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/TestSplitsandValidation.rmp?raw=true)
+- [CrossValidation.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/CrossValidation.rmp?raw=true)
+- [VisualModelComparison.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/VisualModelComparison.rmp?raw=true)

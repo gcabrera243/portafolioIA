@@ -28,7 +28,7 @@ embarked - Puerto de Embarque (C = Cherbourg; Q = Queenstown; S = Southampton)
 boat - Bote Salvavidas (si sobrevivió)
 body - Número de Cuerpo (si no sobrevivió y el cuerpo fue recuperado)
 
-![atributos](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/atributos.png?raw=true)
+![atributos](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/Atributos.png?raw=true)
 
 De estas estadísticas se puede ver que faltan:
 
@@ -55,7 +55,7 @@ y los pesos son
 
 ![Weights](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/Weights.png?raw=true)
 
-
+## Archivos
 A continuacion se deja el proceso de RapidMiner
 
-![TA1](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/TA1.rmp?raw=true)
+- [TA1](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/TA1.rmp?raw=true)

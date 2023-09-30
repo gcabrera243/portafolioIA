@@ -7,14 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>PD3 - Procesamiento previo de los datos - Wine en Python</title>
+  <title>TA1 - Procesamiento previo de los datos - Titanic</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-<link href="/pd3-procesamiento-previo-de-los-datos-wine-en-python.html" rel="canonical" />
+<link href="/ta1-procesamiento-previo-de-los-datos-titanic.html" rel="canonical" />
   <!-- Feed -->
 
   <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
@@ -33,27 +33,27 @@
 
 
 
-    <meta name="description" content="En este ejercicio se desea practicar las técnicas de pre procesamiento y obtención estadísticas de un dataset utilizando funciones en...">
+    <meta name="description" content="En este articulo, investigaremos el dataset de titanic. Problema Se busca predecir dado los datos que se conocen antes de embarcar, si...">
 
     <meta name="author" content="Gaston Cabrera">
 
-    <meta name="tags" content="['PDs']">
+    <meta name="tags" content="['TAs']">
 
 
 
 
 <!-- Open Graph -->
 <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Portafolio IA"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="PD3 - Procesamiento previo de los datos - Wine en Python"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="En este ejercicio se desea practicar las técnicas de pre procesamiento y obtención estadísticas de un dataset utilizando funciones en..."/>
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="TA1 - Procesamiento previo de los datos - Titanic"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="En este articulo, investigaremos el dataset de titanic. Problema Se busca predecir dado los datos que se conocen antes de embarcar, si..."/>
 <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/pd3-procesamiento-previo-de-los-datos-wine-en-python.html"/>
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/ta1-procesamiento-previo-de-los-datos-titanic.html"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:published_time" content="2023-09-03 10:20:00+02:00"/>
 <meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content=""/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="/author/gaston-cabrera.html">
 <meta prefix="og: http://ogp.me/ns#" property="article:section" content="UT2"/>
-<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="['PDs']"/>
+<meta prefix="og: http://ogp.me/ns#" property="article:tag" content="['TAs']"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/theme/images/home-bg.jpg">
 
 <!-- Twitter Card -->
@@ -62,8 +62,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "PD3 - Procesamiento previo de los datos - Wine en Python",
-  "headline": "PD3 - Procesamiento previo de los datos - Wine en Python",
+  "name": "TA1 - Procesamiento previo de los datos - Titanic",
+  "headline": "TA1 - Procesamiento previo de los datos - Titanic",
   "datePublished": "2023-09-03 10:20:00+02:00",
   "dateModified": "",
   "author": {
@@ -72,8 +72,8 @@
     "url": "/author/gaston-cabrera.html"
   },
   "image": "/theme/images/post-bg.jpg",
-  "url": "/pd3-procesamiento-previo-de-los-datos-wine-en-python.html",
-  "description": "En este ejercicio se desea practicar las técnicas de pre procesamiento y obtención estadísticas de un dataset utilizando funciones en..."
+  "url": "/ta1-procesamiento-previo-de-los-datos-titanic.html",
+  "description": "En este articulo, investigaremos el dataset de titanic. Problema Se busca predecir dado los datos que se conocen antes de embarcar, si..."
 }
 </script>
 </head>
@@ -121,7 +121,7 @@
             </a>
           </span>
         </nav>
-        <h1 class="post-title">PD3 - Procesamiento previo de los datos - Wine en Python</h1>
+        <h1 class="post-title">TA1 - Procesamiento previo de los datos - Titanic</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="/author/gaston-cabrera.html">Gaston Cabrera</a>
@@ -138,33 +138,71 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>En este ejercicio se desea practicar las técnicas de pre procesamiento y obtención
-estadísticas de un dataset utilizando funciones en Python.</p>
-<h2>Codigo implementado</h2>
+                <p>En este articulo, investigaremos el dataset de titanic.</p>
+<h1>Problema</h1>
+<p>Se busca predecir dado los datos que se conocen antes de embarcar, si la persona embarcada sobrevivirá o no.</p>
+<h1>Atributos</h1>
+<p>Clase Objetivo
+survived - Supervivencia (0 = No; 1 = Sí)</p>
+<p>Atributos
+pclass - Clase de Pasajero (1 = 1ra; 2 = 2da; 3 = 3ra)
+name - Nombre
+sex - Género
+age - Edad
+sibsp - Número de Hermanos/Cónyuges a Bordo
+parch - Número de Padres/Hijos a Bordo
+ticket - Número de Boleto
+fare - Tarifa del Pasajero
+cabin - Cabina
+embarked - Puerto de Embarque (C = Cherbourg; Q = Queenstown; S = Southampton)
+boat - Bote Salvavidas (si sobrevivió)
+body - Número de Cuerpo (si no sobrevivió y el cuerpo fue recuperado)</p>
+<p><img alt="atributos" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/Atributos.png?raw=true"></p>
+<p>De estas estadísticas se puede ver que faltan:</p>
 <ul>
-<li><a href="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD3/UT2_PD3.ipynb?raw=true">codigo</a></li>
+<li>264 Edades</li>
+<li>2 Tarifa del Pasajero</li>
+<li>1015 Cabinas</li>
+<li>3 Puertos de embarque</li>
+<li>824 botes salvavidas
+entre otros</li>
+</ul>
+<h1>Tratamiento de los datos</h1>
+<p>El bote salvavidas y el numero de cuerpo no son atributos que nos sirvan porque no contamos con esta informacion a la hora de embarcar.
+Cabinas tampoco nos sirve porque tiene muchisimos valores faltantes 1015 de 1310 posibles.
+Para los datos faltantes lo que se hizo fue reemplazarlos utilizando el promedio.
+Luego se normalizan todos los datos.</p>
+<h1>Correlaciones</h1>
+<p>Modelando el problema obtenemos la siguiente matriz de correlacion.
+<img alt="CorrelationMatrix" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/CorrelationMatrix.png?raw=true"></p>
+<p>y los pesos son</p>
+<p><img alt="Weights" src="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/Weights.png?raw=true"></p>
+<h2>Archivos</h2>
+<p>A continuacion se deja el proceso de RapidMiner</p>
+<ul>
+<li><a href="https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA1/TA1.rmp?raw=true">TA1</a></li>
 </ul>
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=PD3 - Procesamiento previo de los datos - Wine en Python&amp;url=/pd3-procesamiento-previo-de-los-datos-wine-en-python.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a title="Twitter" aria-label="Twitter" class="twitter" href="https://twitter.com/share?text=TA1 - Procesamiento previo de los datos - Titanic&amp;url=/ta1-procesamiento-previo-de-los-datos-titanic.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                       <i class="ic ic-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/pd3-procesamiento-previo-de-los-datos-wine-en-python.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a title="Facebook" aria-label="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/ta1-procesamiento-previo-de-los-datos-titanic.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                       <i class="ic ic-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/pd3-procesamiento-previo-de-los-datos-wine-en-python.html&amp;title=PD3 - Procesamiento previo de los datos - Wine en Python" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
+                    <a title="LinkedIn" aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/ta1-procesamiento-previo-de-los-datos-titanic.html&amp;title=TA1 - Procesamiento previo de los datos - Titanic" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
                       <i class="ic ic-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
                     </a>
-                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=PD3 - Procesamiento previo de los datos - Wine en Python&amp;body=/pd3-procesamiento-previo-de-los-datos-wine-en-python.html">
+                    <a title="Email" aria-label="Email" class="email" href="mailto:?subject=TA1 - Procesamiento previo de los datos - Titanic&amp;body=/ta1-procesamiento-previo-de-los-datos-titanic.html">
                       <i class="ic ic-mail" aria-hidden="true"></i><span class="hidden">Email</span>
                     </a>
                     <div class="clear"></div>
                 </div>
 
                 <aside class="post-tags">
-<a href="/tag/pds.html">[&#39;PDs&#39;]</a>                </aside>
+<a href="/tag/tas.html">[&#39;TAs&#39;]</a>                </aside>
 
                 <div class="clear"></div>
 

@@ -2,7 +2,7 @@ Title: PD1 - Procesamiento previo de los datos - Wine
 Date: 2023-09-03 10:20
 Category: UT2
 cover:
-tags: PDs 
+tags: ['PDs'] 
 
 En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la preparacion de datos y luego utilizaremos el conjunto de datos Wine de la UCI como ejemplo práctico para demostrar lo aprendido.
 

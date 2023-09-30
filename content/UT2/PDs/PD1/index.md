@@ -15,9 +15,7 @@ los tutoriales:
 Gracias a los tutoriales de RapidMiner, hemos adquirido un profundo conocimiento de las herramientas disponibles para el procesamiento de datos, selección de características y diversas técnicas de normalización.
 Durante el análisis de los datos, hemos reconocido la importancia de la normalización. Además, hemos identificado valores atípicos en ciertas instancias y notado la presencia de valores faltantes en algunos atributos.
 
-Archivos de RapidMiner:
-[HandleMissingValues.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/HandleMissingValues.rmp?raw=true)
-[RemoveOutliers.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/RemoveOutliers.rmp?raw=true)
+
 
 ## Ejemplo Práctico
 Problema planteado: Determinar la clase de vino a partir de sus concentraciones de varios nutrientes. Se trata de un problema de clasificacion donde vamos a tener 3 clases.
@@ -44,6 +42,13 @@ Para el dataset con bloques:
 ![performance](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/PDs/PD1/PerformanceNormalizado.png?raw=true)
 
 Dio mejor la performance de los datos sin normalizar en este caso. Esto puede ser por el split actual de datos.
+
+
+## Archivos
+Archivos Ejercicio 1:
+[HandleMissingValues.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/HandleMissingValues.rmp?raw=true)
+[RemoveOutliers.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/RemoveOutliers.rmp?raw=true)
+Archivos Ejercicio 2:
 [UT2_PD1_Ej2.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD1/UT2_PD1_Ej2.rmp?raw=true)
 
 
