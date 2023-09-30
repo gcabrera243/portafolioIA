@@ -25,9 +25,21 @@ sepal_width: Ancho del sépalo en centímetros.
 petal_length: Longitud del pétalo en centímetros.
 petal_width: Ancho del pétalo en centímetros.
 
+![estadisticas_iris](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA3/estadisticas_iris.png?raw=true)
+
+
 La variable objetivo es iris y puede tomar los valores "Iris setosa," "Iris versicolor," y "Iris virginica."
 
 Al aplicar deteccion de outliers por distancia detectamos 10 outliers.
 
-<!-- ingresar imagenes y rmp -->
+
+Al hacer la grafica podemos ver que hay 3 zonas claramente diferenciadas, representadas en los colores azul, verde y naranja. sin embargo las zonas verde y naranja tienen una parte de su área solapada, lo que dificultaría la clasificación.
+
+También se puede notar una correlación bastante fuerte entre la longitud del pétalo y su ancho.
+dos.
+![scatter_plot](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA3/scatter_plot.png?raw=true)
+
+## Archivos
+- [iris.rmp](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT2/TAs/TA3/iris.rmp?raw=true)
+
 
