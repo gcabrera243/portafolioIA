@@ -4,7 +4,7 @@ Category: UT2
 cover:
 tags: ['PDs'] 
 
-En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la preparacion de dato y luego utilizaremos el conjunto de datos Wine de la UCI como ejemplo práctico para demostrar lo aprendido.
+En este artículo, seguiremos los tutoriales de RapidMiner "Handling Missing Values" y "Normalization and Outlier detection" para la preparacion de datos y luego utilizaremos el conjunto de datos Wine de la UCI como ejemplo práctico para demostrar lo aprendido.
 
 ## Aprendizaje de RapidMiner
 En RapidMiner Studio, ve a la sección de Help / Tutorials, y de la parte “Prepare Data” completa
@@ -50,7 +50,7 @@ Se detectaron 10 outliers en los datos.
 Se crearon dos canales, uno donde se utiliza el dataset tal cual esta y otro en donde se aplican bloques para normalizar y estandarizar los datos.
 
 para el dataset sin bloques:
-<!-- Imagen Performance sin Normalizar -->
+![performance1](https://github.com/gcabrera243/portafolioIA/tree/main/content/UT2/PDs/PD1/PerformanceSinNormalizar.png?raw=true)
 
 Para el dataset con bloques:
 <!-- Imagen Performance Normalizado -->
