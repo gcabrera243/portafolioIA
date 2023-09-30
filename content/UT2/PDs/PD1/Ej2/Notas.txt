@@ -1,0 +1,27 @@
+Problema planteado: Determinar la clase de vino a partir de sus concentraciones de varios nutrientes.
+
+Variable objetivo: class (clase de vino)
+
+La variable objetivo es de tipo categórico (1, 2 o 3).
+Los atributos Magnesium y Proline son de tipo numérico entero.
+La mayoría de atributos son de tipo numérico de punto flotante.
+
+Atributo					Tipo	
+class						Categorical
+Alcohol						Continuous
+Malicacid					Continuous
+Ash						Continuous
+Alcalinity_of_ash				Continuous
+Magnesium					Integer
+Total_phenols					Continuous
+Flavanoids					Continuous
+Nonflavanoid_phenols				Continuous
+Proanthocyanins					Continuous
+Color_intensity					Continuous
+Hue						Continuous
+0D280_0D315_of_diluted_wines			Continuous
+Proline						Integer
+
+
+
+Dio mejor la performance de los datos sin normalizar en este caso.
