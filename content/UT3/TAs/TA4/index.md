@@ -1,8 +1,8 @@
-Title: PD4 - Algoritmos Lineales - Implementación en Python
+Title: TA4 - Algoritmos Lineales - Implementación en Python
 Date: 2023-09-03 10:20
 Category: UT3
 cover:
-tags: 'PDs','UT3','PD4' 
+tags: 'TAs','UT3','TA4' 
 
 El objetivo es entender como utilizar regresion logistica en python.
 
@@ -74,14 +74,14 @@ Crear el un modelo de LR y entrenarlo.
 ## Evaluación
 Predecir las clases para los datos del conjunto de prueba y ver los resultados
 
-![PredictedVsExpected](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD4/PredictedVsExpected.png?raw=true)
+![PredictedVsExpected](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/TAs/TA4/PredictedVsExpected.png?raw=true)
 
 Probar el modelo y ver el reporte.
-![Report](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD4/Report.png?raw=true)
+![Report](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/TAs/TA4/Report.png?raw=true)
 
 Ver la matriz de confusión
-![Matrix](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD4/Matrix.png?raw=true)
+![Matrix](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/TAs/TA4/Matrix.png?raw=true)
 
 
 ## Archivos
-[UT3_TA4_PD_Ej4.ipynb](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD4/UT3_TA4_PD_Ej4.ipynb?raw=true)
+[UT3_TA4_PD_Ej4.ipynb](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/TAs/TA4/UT3_TA4_PD_Ej4.ipynb?raw=true)
