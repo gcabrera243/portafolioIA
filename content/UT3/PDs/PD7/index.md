@@ -10,7 +10,8 @@ Análisis Discriminante Lineal y la librería scikit-learn de Python.
 # Proceso
 
 Para comenzar deberemos importar las siguientes librerias:
-    import matplotlib
+    
+	import matplotlib
     import matplotlib.pyplot as plt
     import pandas as pd
     from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
@@ -21,7 +22,8 @@ Para comenzar deberemos importar las siguientes librerias:
 
 Luego cargaremos el archivo de datos 'sample.csv' y mostraremos sus valores.
 Para esto utilizaremos el codigo:
-    input_file = "sample.csv"
+	
+	input_file = "sample.csv"
     df = pd.read_csv(input_file, header=0)
     print(df.values)
 	
@@ -62,7 +64,8 @@ Ahora podemos predecir las clases para los datos del conjunto de prueba y ver lo
 
 Reporte: 
 ![Report](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD7/Report.png?raw=true)
-MAtriz de confusion:
+
+Matriz de confusion:
 
 ![Matrix](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD7/Matrix.png?raw=true)
 

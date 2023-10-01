@@ -21,7 +21,7 @@ Para comenzar deberemos importar las siguientes librerias:
 
 Luego cargaremos el archivo de datos 'sample.csv' y mostraremos sus valores.
 Para esto utilizaremos el codigo:
-    input_file = "sample.csv"
+	input_file = "sample.csv"
     df = pd.read_csv(input_file, header=0)
     print(df.values)
 	
@@ -62,13 +62,11 @@ Ahora podemos predecir las clases para los datos del conjunto de prueba y ver lo
 
 Reporte: 
 ![Report](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD7/Report.png?raw=true)
-MAtriz de confusion:
+
+Matriz de confusion:
 
 ![Matrix](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD7/Matrix.png?raw=true)
 
 
 # Archivos
-El paso a paso del ejercicio está realizado en el notebook siguiente:
 - [UT3_TA7PD.ipynb](https://github.com/gcabrera243/portafolioIA/blob/main/content/UT3/PDs/PD7/UT3_TA7PD.ipynb)
-
-Como podemos ver, podemos obtener resultados similares de ambas formas y de manera muy simple.
