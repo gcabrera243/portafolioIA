@@ -3,6 +3,8 @@ SITENAME = 'Portafolio IA'
 SITEURL = ''
 
 PATH = 'content'
+OUTPUT_PATH = "docs"
+
 
 TIMEZONE = 'Europe/Rome'
 
@@ -14,9 +16,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-THEME = 'attila-1.6'
-
 
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
